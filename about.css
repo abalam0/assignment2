@@ -1,0 +1,457 @@
+@import url("../Satoshi_Complete/Fonts/WEB/css/satoshi.css");
+
+
+
+/*start css of full-web-maintain part */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.side-gap{
+    width: 88%;
+    margin: 0 auto;
+}
+
+/* start of variable */
+:root{
+    /* color property start */
+    --white:#ffffff;
+    --white2:#E4E4E7;
+    --white3:#FCFCFC;
+    --white4:#E4E4E7;
+    --black:#18181B;
+    --black2:#18181B;
+    --gray:#70707B;
+    --gray1:#F4F4F5;
+    --gray3:#D1D1D6;
+    --gray4:#A0A0AB;
+    --gray-dark:#51525C;
+    --red:red;
+    --green:green;
+    /* color property end */
+    /* size property  start*/
+    --large-size:6.5rem;
+    --medium1:4rem;
+    --medium2:3.25rem;
+    --small:3rem;
+    --x-small1:2.5rem;
+    --x-small2:2rem;
+    --x-small3:1.5rem;
+    --x-small4:1.3rem;
+    --location-gap:0.5rem;
+    --default-size:1rem;
+    --font-weight1:100;
+    --font-weight2:700;
+    /* size property end */
+}
+/* end of variable */
+
+
+a{
+    text-decoration: none;
+}
+
+/*end css of full-web-maintain part */
+
+
+/* start css of header */
+header{
+    display: flex;
+    justify-content: space-between;
+    height: 5.18rem;
+    align-items: center;
+}
+
+.logo-name{
+    display: flex;
+    align-items: center;
+    gap: 1%;
+    font-size: var(--x-small3);
+    font-weight: 700;
+    color: var(--black);
+}
+
+
+.logo-name p{
+    padding-left: 0.5rem;
+}
+
+
+header nav{
+    display: flex;
+    gap: 2rem;
+    font-weight: var(--font-weight1);
+}
+
+header nav a{
+    text-decoration: none;
+    font-size: 10px;
+    color: var(--gray);
+}
+
+.contact-btn button{
+    background-color: var(--black2);
+    color: var(--white);
+    border: none;
+    padding: 0.625rem 1.125rem;
+    border-radius: 0.375rem;
+}
+/* end css of header */
+
+/* start of hero part */
+.hero-part{
+    margin-top: 5rem;
+}
+.list-text{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: var(--medium2);
+}
+
+.list-text h2{
+    font-weight: var(--font-weight1);
+    font-size: var(--medium2);
+}
+
+.list-text p{
+    line-height: 1.5;
+    font-size: var(--default-size);
+    width: 45%;
+    color: var(--gray);
+}
+
+.hero-img img{
+    width: 100%;
+}
+
+/* end of hero part */
+
+/*start of statistic part */
+.statistic-body{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3.5rem;
+}
+
+.statistic-body h1{
+    position: relative;
+    font-size: var(--medium1);
+    font-weight: var(--font-weight1);
+    margin-bottom: 1.25rem;
+}
+
+.statistic-body svg{
+    position: absolute;
+    top: 18px;
+}
+
+.statistic-body i{
+    font-size: var(--x-small4);
+    font-weight: var(--font-weight1);
+    color: var(--gray4);
+}
+/*end of statistic part */
+
+/* start of details part */
+
+.faq-part{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5rem;
+    gap: 3%;
+}
+
+.faq-texts h2{
+    font-size: var(--medium2);
+    font-weight: var(--font-weight1);
+}
+.faq-texts{
+    width: 50%;
+}
+
+.faq-part p{
+    line-height: 2;
+    margin-top: 1.8rem;
+    color: var(--gray-dark);
+    font-weight: var(--font-weight1);
+}
+
+.faq-img{
+    width: 50%;
+}
+
+.faq-img img{
+    width: 100%;
+}
+/* end of details part */
+
+
+/* start of bank part */
+
+.bank-body{
+    margin-top: 8rem;
+}
+.bank-body h2{
+    font-size: var(--x-small1);
+    font-weight: var(--font-weight1);
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.all-bank{
+    font-weight: var(--font-weight1);
+    display: flex;
+    justify-content: space-between;
+    color: var(--gray-dark);
+}
+
+.all-bank h3{
+    position: relative;
+    font-size: var(--x-small3);
+    text-wrap:wrap;
+}
+
+.all-bank p{
+    font-size:1rem;
+}
+/* end of band part */
+
+/* start of testimonial part */
+.testimonial-texts{
+    padding-top: 6rem;
+    margin-bottom: 4rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.testimonial-texts h3{
+    font-size: var(--medium2);
+    font-weight: var(--font-weight1);
+}
+
+
+.testimonial-texts P{
+    color: var(--gray-dark);
+    width: 40%;
+    line-height: 1.5;
+}
+
+.hr-div hr{
+    margin-bottom: 5rem;
+    border: 1px solid var(--white2);
+}
+
+.texts-image{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.texts-image .left-text{
+    width: 55%;
+}
+
+.texts-image .left-text svg{
+    margin-bottom: 2rem;
+}
+
+.texts-image .line-div{
+    display: flex;
+    align-items: center;
+    gap: 0.5%;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+
+.line-div span{
+    font-size: var(--x-small4);
+}
+
+.left-text h3{
+    width: 100%;
+    font-weight: var(--font-weight1);
+    font-size: var(--medium2);
+}
+.left-text p{
+    font-size: var(--x-small2);
+    margin-top:1rem ;
+    line-height: 1.5;
+    color: var(--gray-dark);
+}
+
+.texts-image .line{
+   width: 1rem;
+   height: 0.1rem;
+   background-color: var(--black);
+}
+
+.three-line{
+    margin-top: 1rem;
+    display: flex;
+    gap: 1%;
+}
+
+.three-line .black{
+    width: 3.5rem;
+    height: 0.5rem;
+    border-radius:1rem;
+    background-color: var(--black);
+}
+.three-line .white{
+    width: 3.5rem;
+    height: 0.5rem;
+    border-radius:1rem;
+    border: 1px solid var(--white4);
+    background-color: var(--white4);
+}
+
+.testimonial-img{
+    width: 40%;
+}
+
+.testimonial-img img{
+    width: 100%;
+}
+/* end of testimonial part */
+
+
+/* start of faq part */
+.faq-part{
+    display: flex;
+    justify-content: space-between;
+    gap: 4.47%;
+}
+
+.img-text{
+    width: 41.56%;
+}
+
+.img-text img{
+    width: 100%;
+}
+
+.img-text h2{
+    font-size: var(--medium1);
+    font-weight: var(--font-weight1);
+}
+
+.img-text p{
+    margin-top: 3.5rem;
+    margin-bottom:3.5rem ;
+    line-height: 1.5;
+}
+
+.only-texts{
+    width: 56.06%;
+}
+
+.only-texts h5{
+    font-size: var(--x-small3);
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    font-weight: var(--font-weight1);
+}
+
+.only-texts i{
+    font-size: 1rem;
+    color: var(--gray4);
+}
+
+.only-texts p{
+   margin-bottom: 3.1rem;
+   display: flex;
+   justify-content: space-between;
+   line-height: 1.5;
+}
+/* end of faq part */
+
+
+
+/* start of footer part */
+
+footer{
+    background-color: var(--black2);
+    color: var(--white);
+    padding-top: 5rem;
+}
+
+.footer-body{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.information {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5rem;
+}
+
+.information span{
+    color: var(--gray4);
+}
+
+.left-info{
+    width: 46.68%;
+}
+
+.left-info h3{
+    font-size: var(--x-small1);
+    font-weight: var(--font-weight1);
+}
+
+.address{
+    display: flex;
+    gap: 3%;
+    margin-top: 3rem;line-height: 2;
+}
+
+.right-info{
+    width: 24%;
+    gap: 3%;
+}
+
+
+.navigation{
+    display: flex;
+    justify-content: space-between;
+}
+
+.all-links{
+    display: flex;
+    justify-content: space-between;
+}
+
+.right-info a{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: var(--white1);
+}
+
+.all-links .flink{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-text{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 2.5rem;
+}
+
+.footer-text p{
+    color: var(--white);
+}
+
+
+footer .back-arrow svg {
+    margin-left: 0.5rem;
+}
+
+
+/* end of footer part */
