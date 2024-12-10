@@ -1,6 +1,6 @@
 
 
-@import url("../Satoshi_Complete/Fonts/WEB/css/satoshi.css");
+@import url("./Satoshi_Complete/Fonts/WEB/css/satoshi.css");
 
 
 /*start css of full-web-maintain part */
@@ -12,7 +12,7 @@
 
 
 body{
-    font-family:'Satoshi',sans-serif;
+    font-family:'Satoshi_Complete',sans-serif;
 }
 
 main{
@@ -98,7 +98,7 @@ header nav{
 
 header nav a{
     text-decoration: none;
-    font-size: 10px;
+    font-size: 1rem;
     color: var(--gray);
 }
 
