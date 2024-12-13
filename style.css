@@ -269,8 +269,9 @@ nav a:hover::after{
    from{
         top: -6px;
     }
+
     to{
-        top: 13px;
+        top: 16px;
     }
 }
 
@@ -344,11 +345,15 @@ nav a:hover::after{
     border-radius: 0.5rem;
     background-color: var(--black);
     color: var(--white);
-    transition: background-color 0.4s ease , color 0.4s ease;
+    transition: background-color 0.4s ease;
 }
 
 .learn-more:hover{
     background-color: var(--hover-bg-color);
+}
+
+.learn-more span{
+    transition: color 0.6s ease;
 }
 
 .learn-more span:hover{
@@ -409,12 +414,12 @@ nav a:hover::after{
 
 .commit-part:hover .big-text{
     position: relative;
-    animation: move-left 2s ease-in-out forwards ;
+    animation: move-left 1s ease-in-out forwards ;
  }
  
  @keyframes move-left{
     from{
-         left:-410px;
+         left:-480px;
      }
      to{
          left: 0px;
@@ -426,12 +431,12 @@ nav a:hover::after{
 
  .commit-part:hover .commit-texts{
     position: relative;
-    animation: move-right 2s  ease-in-out forwards ;
+    animation: move-right 1s  ease-in-out forwards ;
  }
 
  @keyframes move-right{
     from{
-         right:-410px;
+         right:-540px;
      }
      to{
          right: 0px;
