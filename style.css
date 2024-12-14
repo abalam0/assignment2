@@ -1484,6 +1484,10 @@ footer .right-info a:hover{
         width: 100%;
     }
 
+    .left-info h3 {
+        width: 100%;
+    }
+
 
     .right-info{
         width: 100%;
