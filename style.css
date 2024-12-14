@@ -157,6 +157,11 @@ nav a:hover::after{
     color: var(--white);
 }
 
+
+ .three-dot{
+    display: none;
+}
+
 /* end hover and animation */
 /* end css of header */
 
@@ -348,6 +353,11 @@ nav a:hover::after{
     transition: background-color 0.4s ease;
 }
 
+
+.pc-button{
+    display: none;
+}
+
 .learn-more:hover{
     background-color: var(--hover-bg-color);
 }
@@ -465,7 +475,6 @@ nav a:hover::after{
 
 .property-list{
     flex: 1;
-
 }
 
 .row .img-link {
@@ -517,6 +526,7 @@ nav a:hover::after{
 
 .list-text{
     display: flex;
+    align-items: center;
     justify-content: space-between;
     margin-bottom: var(--medium2);
 }
@@ -753,6 +763,10 @@ hr{
     font-weight: var(--font-weight1);
 }
 
+.blog-down-text .phone-text{
+    display: none;
+}
+
 .dot-link{
     display: flex;
     align-items: center;
@@ -777,6 +791,10 @@ hr{
     height: 0.75rem;
     border-radius: 50%;
     border: 1px solid var(--gray-dark);
+}
+
+.dot-link .phone-circle{
+    display: none;
 }
 /* end of blog part */
 
@@ -922,7 +940,17 @@ footer{
 }
 
 .left-info{
-    width: 46.68%;
+    width: 60%;
+}
+
+.phone-general{
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+}
+
+.office{
+    width: 50%;
 }
 
 .left-info h3{
@@ -937,31 +965,45 @@ footer{
 }
 
 .right-info{
-    width: 24%;
+    display: flex;
+    justify-content: space-between;
+    width:35%;
     gap: 3%;
 }
 
 
 .navigation{
+    width: 60%;
+}
+
+
+.all-nav{
     display: flex;
     justify-content: space-between;
 }
 
-.all-links{
-    display: flex;
-    justify-content: space-between;
+.all-nav .nav1{
+    margin-top: 1rem;
 }
+
+.social-link{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
 
 .right-info a{
-    margin-top: 1rem;
-    margin-bottom: 1rem;
     color: var(--white1);
 }
 
-.all-links .flink{
-    display: flex;
-    flex-direction: column;
+.social-link .slink{
+    margin-top: 1rem;
+    color: var(--white);
 }
+
+
 
 .footer-text{
     display: flex;
@@ -976,10 +1018,10 @@ footer .back-arrow svg {
     margin-left: 0.5rem;
 }
 
-.all-links a{
+.right-info a{
     transition: color 0.3s ease;
 }
-footer .all-links a:hover{
+footer .right-info a:hover{
     color: var(--hover-bg-color);
 }
 
@@ -987,9 +1029,546 @@ footer .all-links a:hover{
 .footer-text .back-arrow a{
     color: var(--white);
 }
+
 .footer-text .back-arrow a:hover{
    color: var(--hover-bg-color);
 }
 
 
 /* end of footer part */
+
+
+
+
+    /* start css for Medium devices (tablets) */
+    @media only screen and (min-width: 767.99px) and (max-width: 991.98px) {
+
+
+        /* header start */
+        header nav {
+           gap: 1rem;
+        }
+
+        .hero-text h1 {
+            font-size:var(--medium2);
+        }
+        /* header end */
+
+        /* start of about part */
+
+        .commit-part {
+            flex-direction: column;
+        }
+        .commit-part .big-text {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+
+        .big-text h2 {
+            width: 80%;
+        }
+
+
+        .commit-part .commit-texts {
+            width: 100%;
+        }
+
+        .big-text .pc-button{
+            display: none;
+        }
+
+        .big-text .tab-button .learn-more{
+            text-wrap: nowrap;
+        }    
+        /* end of about part */
+
+        /* property part start */
+
+        .list-text h2 {
+            font-weight: var(--font-weight1);
+            font-size: var(--x-small2);
+        }
+
+        .list-text p {
+            width: 55%;
+        }
+
+        .row .property-list3{
+            display: none;
+        }
+        /* property part end */
+
+
+            /* faq part start */
+    .faq-part{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .faq-part .img-text{
+        width: 100%;
+    }
+
+    .img-text p{
+        margin-top: 0.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .img-text img{
+        display: none;
+    }
+
+    .faq-part .only-texts{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .only-texts p{
+        text-align: start;
+    }
+
+    /* faq part end */
+
+    /* blog part start */
+
+
+    .list-text {
+       display: block;
+    }
+
+    .list-text h2 {
+        width: 100%;
+    }
+
+
+    .blog-body .list-text p {
+        padding-top: 1rem;
+        width: 100%;
+    }
+    .blog3{
+        display: none;
+    }
+    /* blog part end */
+
+
+    /* communication part start */
+    .communicate-part img {
+        width: auto;
+        height: auto;
+    }
+    /* communication part end */
+
+    /* footer part start */
+    .address{
+        flex-direction: column;
+    }
+
+    .address .office{
+        width: 100%;
+    }
+
+
+    .social-link {
+        display: block;
+    }
+    /* footer part end */
+
+
+
+
+
+
+
+        
+    }
+    /* end css for Medium devices (tablets) */
+
+
+
+
+
+
+
+
+/*  start css for mobail */
+@media only screen and (min-width: 0px) and (max-width: 575.98px) {
+
+
+
+    /* start of header */
+
+    header nav{
+        display: none;
+    }
+    header button{
+        display: none;
+    }
+    
+    header .three-dot{
+        display: block;
+    }
+    /* end of header */
+    
+    /* start of hero part */
+    .hero-body  .gallery-images{
+        display: none;
+    }
+    
+
+    .hero-body .hero-text{
+        width: 100%;
+
+    }
+
+    .hero-text h1 {
+        font-size: var(--medium2);
+        font-weight: var(--font-weight1);
+        text-wrap: wrap;
+        line-height: 1.5;
+    }
+    /* end of hero part */
+
+    /* start of commit part */
+
+    .commit-part{
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+    }
+
+    .commit-part .big-text{
+        width: 100%;
+        text-align: center;
+    }
+
+    .commit-part:hover .big-text {
+        position: static;
+    }
+
+
+    .commit-part:hover .commit-texts {
+        position: static;
+    }
+    .commit-part .commit-texts {
+       width: 100%;
+       text-align: center;
+       padding-top: 1rem;
+    }
+
+    .commit-part .commit-texts p{
+        margin-bottom: 0.5rem;
+    }
+
+
+    .property-container {
+        display: block;
+    }
+
+    .property-container .property{
+        text-align: center;
+        margin-bottom: 0.5rem;
+    }
+
+
+    /* end of commit part */
+
+
+    /* start of property-body */
+
+    .property-body .list-text {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .property-body .list-text h2,
+    .property-body .list-text p{
+        width: 100%;
+    }
+
+
+    .row{
+        flex-direction: column;
+    }
+
+
+    .first-row   .property-list3,
+    .second-row  .property-list3,
+    .third-row   .property-list1, 
+    .third-row   .property-list2, 
+    .third-row   .property-list3{
+        display: none;
+    }
+    /* end of property-body */
+
+    /* faq part start */
+    .faq-part{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .faq-part .img-text{
+        width: 100%;
+    }
+
+    .img-text p{
+        margin-top: 0.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .img-text img{
+        display: none;
+    }
+
+    .faq-part .only-texts{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .only-texts p{
+        text-align: start;
+    }
+
+    /* faq part end */
+
+
+    /* blog part start */
+    .blog-body .list-text{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .blog-body .list-text h2,
+    .blog-body .list-text p {
+        padding-top: 1rem;
+        width: 100%;
+    }
+
+    .blog-body .blog3{
+        display: none;
+    }
+
+    .all-blog {
+        flex-direction: column;
+    }
+
+    .blog1{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 1rem;
+    }
+    
+
+    .blog1 .img-link{
+        width: 48%;
+        height: 100%;
+        display: block;
+        overflow: hidden;
+    }
+
+    .blog1 img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .blog1 .pc-text{
+        display: none;
+    }
+
+
+    .all-blog .blog-down-text {
+        display: block;
+        flex-direction: column;
+        width: 48%;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .all-blog  .blog-down-text .phone-text{
+        display: block;
+        font-size: var(--x-small2);
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .dot-link .arow-link{
+        display: flex;
+        width: 100%;
+        padding-top: 1rem;
+        justify-content: space-between;
+    }
+
+    .dot-link .phone-circle{
+        display: flex;
+    }
+
+    .dot-link .pc-circle{
+        display: none;
+    }
+
+
+
+    /* blog part end */
+
+
+    /* communicate-part start  */
+    .communicate-part img {
+        width: auto;
+        height: auto;
+    }
+
+    .contact-text {
+        flex-direction: column;
+        left: 1.5rem;
+        width: 90%;
+    }
+
+
+    .contact-text .left-part h1 {
+        font-size: var(--x-small1);
+        font-weight: var(--font-weight1);
+    }
+
+    .contact-text .left-part p {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        font-size: var(--x-small);
+        line-height: 1.2;
+    }
+
+
+    .contact-text .left-part {
+        width: 100%;
+    }
+
+
+    .p-general{
+        display: block;
+    }
+
+
+    .contact-text .right-part {
+        width: 100%;
+    }
+    /* communicate-part end  */
+
+    /* start of footer */
+
+    .address{
+        flex-direction: column;
+    }
+     
+    .phone-general{
+        width: 100%;
+        justify-content: start;
+        gap: 8%;
+    }
+
+
+    .office{
+        width: 100%;
+    }
+
+    .information {
+        flex-direction: column;
+    }
+
+
+    .left-info {
+        width: 100%;
+    }
+
+
+    .right-info{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navigation{
+        width: 100%;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .all-nav{
+        justify-content: start;
+        gap: 8%;
+    }
+
+    .social-link {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        gap: 5%;
+        flex-wrap:wrap;
+    }
+
+    .slink{
+        display: inline-block;
+        color: var(--white);
+    }
+
+
+
+    .footer-text {
+        flex-direction: column;
+    }
+
+    .copyright{
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    /* end of footer */
+    
+
+
+
+
+    
+        
+    }
+
+
+/* end  css for mobail */
+
+    
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+    /* Small devices (landscape phones, less than 768px) */
+    @media only screen and (min-width: 575.99px) and (max-width: 768.98px) {
+    }
+    
+    
+    /* Large devices (desktops, less than 1200px) */
+    @media only screen and (min-width: 991.99px) and (max-width: 1199.

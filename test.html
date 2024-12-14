@@ -6,47 +6,42 @@
     <title>CSS Only Animation</title>
 
     <style>
-      body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+.social-link {
+  display: flex; /* প্যারেন্ট div এর মধ্যে সব কিছু inline করার জন্য flex ব্যবহার করা হলো */
+  gap: 10px; /* লিঙ্কগুলোর মধ্যে কিছু ফাঁক */
+  align-items: center; /* উল্লম্বভাবে সেন্টার করা */
+  flex-wrap: wrap; /* প্রয়োজন হলে লাইনে মোড়ানো */
 }
 
-.spacer {
-
+.slink {
+  display: inline-block; /* প্রতিটি লিঙ্ককে inline-block করা */
 }
 
-.box {
-    width: 100px;
-    height: 100px;
-    background-color: red;
-    opacity: 0;
-    transform: scale(0.5);
-    transition: opacity 1s, transform 1s;
+.slink a {
+  text-decoration: none; /* আন্ডারলাইন সরানো */
+  color: #000; /* টেক্সটের কালার সেট করা */
+  padding: 5px 10px; /* কিছু padding যোগ করা */
+  border: 1px solid #ccc; /* বর্ডার যোগ করা */
+  border-radius: 5px; /* গোলাকার প্রান্ত */
 }
 
-/* CSS animation triggered when the element enters viewport */
-
-
-input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
+.slink a:hover {
+  background-color: #f0f0f0; /* হোভার করলে ব্যাকগ্রাউন্ড পরিবর্তন হবে */
 }
 
 
     </style>
 </head>
 <body>
-    <div class="spacer">huiwwhw</div>
-    <div class="box">hfsbm</div>
-    <div class="spacer">khfiuwkf</div>
-
-
-
-    <input type="number" min="0" max="10" step="1">
-
+    <div class="social-link">
+        <span>Follow Us</span>
+        <div class="slink fac"><a href="#">Facebook</a></div>
+        <div class="slink ins"><a href="#">Instagram</a></div>
+        <div class="slink twi"><a href="#">Twitter</a></div>
+        <div class="slink beha"><a href="#">Behance</a></div>
+        <div class="slink drib"><a href="#">Dribble</a></div>
+      </div>
+      
 </body>
 </html>
 
