@@ -750,7 +750,6 @@ footer .right-info a:hover{
    color: var(--hover-bg-color);
 }
 
-
 /* end of footer part */
 
 
@@ -858,13 +857,6 @@ footer .right-info a:hover{
 
 
     }
-
-
-
-
-
-
-
 
     /*  start css for mobail */
     @media only screen and (min-width: 0px) and (max-width: 575.98px){
@@ -1061,11 +1053,6 @@ footer .right-info a:hover{
         /* end of footer */
 
 
-
-
-
-
-
-
+        
         
     }
