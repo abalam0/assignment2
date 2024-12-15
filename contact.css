@@ -65,10 +65,11 @@ a{
 
 /* start css of header */
 header{
+    z-index: 4;
     display: flex;
+    align-items: center;
     justify-content: space-between;
     height: 5.18rem;
-    align-items: center;
 }
 
 .logo-name{
@@ -76,10 +77,9 @@ header{
     align-items: center;
     gap: 1%;
     font-size: var(--x-small3);
-    font-weight: 700;
+    font-weight: var(--font-weight2);
     color: var(--black);
 }
-
 
 .logo-name p{
     padding-left: 0.5rem;
@@ -89,31 +89,21 @@ header{
 header nav{
     display: flex;
     gap: 2rem;
-    font-weight: var(--font-weight1);
 }
 
 header nav a{
     text-decoration: none;
     font-size: 1rem;
-    color: var(--gray);
+    color: var(--gray-dark);
     font-weight:100;
     position: relative;
     transition: color 0.8s ease ;
 }
 
-.contact-btn button{
-    background-color: var(--black2);
-    color: var(--white);
-    border: none;
-    padding: 0.625rem 1.125rem;
-    border-radius: 0.375rem;
-}
-
-
 /* start hover and animation */
 
 header nav a:hover span{
-    color: var(--black);
+    color: var(--hover-bg-color);
 }
 
 
@@ -131,14 +121,14 @@ header nav a:hover span{
 }
 
 
-header nav a::after{
+nav a::after{
     content:'';
     position: absolute;
     left: 0;
     bottom: 0;
     width: 0;
     height: 2px;
-    background-color:var(--green);
+    background-color: var(--white3);
     transition: width  0.3s ease-out;
 }
 
@@ -148,6 +138,7 @@ nav a:hover::after{
 
 .contact-btn button{
     background-color: var(--black);
+    color: var(--white);
     border: none;
     padding: 0.625rem 1.125rem;
     border-radius: 0.375rem;
@@ -155,12 +146,16 @@ nav a:hover::after{
 }
 
 .contact-btn button:hover{
-    background-color:aquamarine;
+    background-color: var(--hover-bg-color);
     color: var(--white);
 }
 
+
+ .three-dot{
+    display: none;
+}
+
 /* end hover and animation */
-/* end css of header */
 /* end css of header */
 
 
@@ -353,14 +348,13 @@ textarea{
 /* end of right part */
 /* end of main body */
 
-
 /* start of footer part */
 
 footer{
     background-color: var(--black2);
     color: var(--white);
     padding-top: 5rem;
-    margin-top: 5rem;
+    margin-top: 3rem;
 }
 
 .footer-body{
@@ -379,7 +373,17 @@ footer{
 }
 
 .left-info{
-    width: 46.68%;
+    width: 60%;
+}
+
+.phone-general{
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+}
+
+.office{
+    width: 50%;
 }
 
 .left-info h3{
@@ -394,31 +398,44 @@ footer{
 }
 
 .right-info{
-    width: 24%;
+    display: flex;
+    justify-content: space-between;
+    width:35%;
     gap: 3%;
 }
 
 
 .navigation{
+    width: 60%;
+}
+
+
+.all-nav{
     display: flex;
     justify-content: space-between;
 }
 
-.all-links{
-    display: flex;
-    justify-content: space-between;
-}
-
-.right-info a{
+.all-nav .nav1{
     margin-top: 1rem;
-    margin-bottom: 1rem;
-    color: var(--white1);
 }
 
-.all-links .flink{
+.social-link{
+    width: 45%;
     display: flex;
     flex-direction: column;
 }
+
+
+.right-info a{
+    color: var(--white1);
+}
+
+.social-link .slink{
+    margin-top: 1rem;
+    color: var(--white);
+}
+
+
 
 .footer-text{
     display: flex;
@@ -428,7 +445,8 @@ footer{
     padding-bottom: 2.5rem;
 }
 
-.footer-text p{
+
+footer .logo-name{
     color: var(--white);
 }
 
@@ -437,10 +455,10 @@ footer .back-arrow svg {
     margin-left: 0.5rem;
 }
 
-.all-links a{
+.right-info a{
     transition: color 0.3s ease;
 }
-footer .all-links a:hover{
+footer .right-info a:hover{
     color: var(--hover-bg-color);
 }
 
@@ -448,7 +466,228 @@ footer .all-links a:hover{
 .footer-text .back-arrow a{
     color: var(--white);
 }
+
 .footer-text .back-arrow a:hover{
    color: var(--hover-bg-color);
 }
+
 /* end of footer part */
+
+
+
+
+
+
+    /* start css for Medium devices (tablets) */
+    @media only screen and (min-width: 767.99px) and (max-width: 991.98px){
+
+
+        .side-gap{
+            width: 90%;
+        }
+
+       /* header start */
+       header nav {
+        gap: 1rem;
+        }
+
+        .hero-text h1 {
+            font-size:var(--medium2);
+        }
+        /* header end */
+
+
+        /* start of main body */
+
+        .contact-part {
+            flex-direction: column;
+        }
+
+
+        .left-part {
+            width: 100%;
+            margin-bottom: 3rem;
+        }
+
+        .right-part {
+            width: 100%;
+        }
+        /* end of main body */
+
+
+        /* footer part start */
+        .address{
+            flex-direction: column;
+        }
+
+        .address .office{
+            width: 100%;
+        }
+
+
+        .social-link {
+            display: block;
+        }
+        /* footer part end */
+
+
+
+
+    }
+    /* end css for Medium devices (tablets) */
+    
+    
+    /*  start css for mobail */
+    @media only screen and (min-width: 0px) and (max-width: 575.98px){
+
+
+        .side-gap{
+        width: 92%;
+        margin: 0 auto;
+        }   
+
+
+        /* start of header */
+
+        header nav{
+            display: none;
+        }
+        header button{
+            display: none;
+        }
+
+        header .three-dot{
+            display: block;
+        }
+        /* end of header */
+
+
+        /* start of main body */
+
+        .contact-part {
+            flex-direction: column;
+        }
+
+        .first-last {
+            flex-direction: column;
+            height: auto;
+        }
+
+
+        .left-part .last {
+            width: 100%;
+            margin-top: 1rem;
+        }
+
+
+        .left-part {
+            width: 100%;
+            margin-bottom: 3rem;
+        }
+
+        .right-part {
+            width: 100%;
+        }
+        /* end of main body */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /* start of footer */
+
+        .address{
+            flex-direction: column;
+        }
+            
+        .phone-general{
+            width: 100%;
+            justify-content: start;
+            gap: 8%;
+        }
+
+
+        .office{
+            width: 100%;
+        }
+
+        .information {
+            flex-direction: column;
+        }
+
+
+        .left-info {
+            width: 100%;
+        }
+
+        .left-info h3 {
+            width: 100%;
+        }
+
+
+        .right-info{
+            width: 100%;
+            flex-direction: column;
+        }
+
+        .navigation{
+            width: 100%;
+            margin-top: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .all-nav{
+            justify-content: start;
+            gap: 8%;
+        }
+
+        .social-link {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            gap: 5%;
+            flex-wrap:wrap;
+        }
+
+        .slink{
+            display: inline-block;
+            color: var(--white);
+        }
+
+
+
+        .footer-text {
+            flex-direction: column;
+        }
+
+        .copyright{
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }
+        /* end of footer */
+
+
+
+    }
+
+    /*  end css for mobail */
